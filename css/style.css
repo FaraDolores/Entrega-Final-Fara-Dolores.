@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-us {
+  background-color: #d4b583;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas: "area1 area2" "area5 area2" "area5 area6";
+}
+
+#area1 {
+  background-color: #d4b583;
+  grid-area: area1;
+  margin: 10px;
+  line-height: 1.5;
+  font-size: large;
+}
+
+#area2 {
+  background-color: #d4b583;
+  grid-area: area2;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  margin: 8px;
+}
+
+#area4 {
+  background-color: #d4b583;
+  grid-area: area4;
+}
+
+#area5 {
+  background-color: #d4b583;
+  grid-area: area5;
+}
+
+.img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  margin-top: 1px;
+}
+
+#area6 {
+  background-color: #d4b583;
+  grid-area: area6;
+  margin: 10px;
+  line-height: 1;
+  font-size: large;
+  text-align: justify;
+  margin: 2px;
+}
+
+.main {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+  grid-template-areas: "area1 area2 area3 area4" "area5 area5 area6 area4" "area7 area8 area9 area9";
+}
+
+#area1 {
+  grid-area: area1;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area2 {
+  grid-area: area2;
+}
+
+.img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area3 {
+  grid-area: area3;
+}
+
+.img3 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area4 {
+  grid-area: area4;
+}
+
+.img4 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area5 {
+  grid-area: area5;
+}
+
+.img5 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area6 {
+  grid-area: area6;
+}
+
+.img6 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area7 {
+  grid-area: area7;
+}
+
+.img7 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area8 {
+  grid-area: area8;
+}
+
+.img8 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#area9 {
+  grid-area: area9;
+}
+
+.img9 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+@media (max-width: 768px) {
+  .main-us {
+    border: 1px solid #632906;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    grid-template-areas: "area1 area2" "area5 area6";
+  }
+
+  nav {
+    background-color: #b17f4e;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-us {
+    border: 1px solid #632906;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    grid-template-areas: "area1" "area2" "area5" "area6";
+  }
+}
+
+header {
+  background-color: #8e6129;
+}
+
+header nav {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Aleo", serif;
+  font-size: x-large;
+}
+
+header nav a:hover {
+  color: #603a01;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #d4b583;
+}
+
+main .tarjeta {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #8e6129;
+  border-radius: 3px;
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+main .tarjeta:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+main .tarjeta img {
+  width: 100%;
+  height: fit-content;
+}
+
+main .tarjeta h2 {
+  color: #4e2c02;
+  text-decoration: underline;
+  background-color: #d4b583;
+  text-align: center;
+}
+
+main .tarjeta p {
+  background-color: #d4b583;
+  text-align: center;
+  line-height: 2;
+  padding: 10px;
+}
+
+main h2 {
+  color: #4e2c02;
+  text-decoration: underline;
+  background-color: #d4b583;
+  text-align: center;
+}
+
+main p {
+  background-color: #d4b583;
+  text-align: center;
+  line-height: 2;
+  padding: 10px;
+}
+
+main ol {
+  text-align: center;
+}
+
+main h4 {
+  text-align: center;
+  padding: 10px;
+  color: #4e2c02;
+}
+
+h1 {
+  color: #4e2c02;
+  text-decoration: underline;
+  background-color: #d4b583;
+  text-align: center;
+}
+
+h3 {
+  color: #4e2c02;
+  background-color: #d4b583;
+  text-align: center;
+}
+
+footer {
+  background-color: #d4b583;
+  color: #774304;
+}
+
+.primer-div {
+  width: 1500px;
+  height: 100px;
+  background-image: linear-gradient(#8e6129, #d4b583);
+  text-align: center;
+
+  .h5 {
+    font-size: xx-large;
+    padding: 10px;
+    color: #4e2c02;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

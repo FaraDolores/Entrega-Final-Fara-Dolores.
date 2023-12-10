@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@import "partials/grid";
+
+header {
+    background-color: #8e6129;
+
+    nav {
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Aleo', serif;
+            font-size: x-large;
+
+            &:hover {
+                color: #603a01;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #d4b583;
+
+    .tarjeta {
+        width: 300px;
+        padding: 15px;
+        border: 1px solid #8e6129;
+        border-radius: 3px;
+        margin-top: 20px;
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 100%;
+            height: fit-content;
+
+        }
+
+        h2 {
+            color: #4e2c02;
+            text-decoration: underline;
+            background-color: #d4b583;
+            text-align: center;
+        }
+
+        p {
+            background-color: #d4b583;
+            text-align: center;
+            line-height: 2;
+            padding: 10px;
+        }
+    }
+
+    h2 {
+        color: #4e2c02;
+        text-decoration: underline;
+        background-color: #d4b583;
+        text-align: center;
+    }
+
+    p {
+        background-color: #d4b583;
+        text-align: center;
+        line-height: 2;
+        padding: 10px;
+    }
+
+    ol {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+        padding: 10px;
+        color: #4e2c02;
+    }
+}
+
+h1{
+    color: #4e2c02;
+    text-decoration: underline;
+    background-color: #d4b583;
+    text-align: center;
+}
+
+h3{
+    color: #4e2c02;
+    background-color: #d4b583;
+    text-align: center;
+}
+
+footer{
+    background-color: #d4b583;
+    color: #774304;
+}
